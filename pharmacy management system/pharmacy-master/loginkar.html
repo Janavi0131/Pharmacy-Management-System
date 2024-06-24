@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8"/>
+    <title>Login</title>
+    <link rel="stylesheet" href="loginstyle.css" />
+</head>
+<body>
+    <nav>
+        <div class="nav-links">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="center">
+        <h1>Login</h1>
+        <form action="loginkar.php" method="post">
+            <div class="txt_field">
+                <input type="text" required name="email"  />
+                <span></span>
+                <label for="email">Email</label>
+
+            </div>
+            <div class="txt_field">
+                <input type="password" required name="password" />
+                <span></span>
+                <label for="password">Password</label>
+            </div>
+            <div class="pass">Forgot Password?</div>
+            <input type="submit" value="Login" />
+             <div class="signin_link">
+                 Not a member? <a href="signin.html">Signin</a>
+             </div> 
+        </form>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>SignIn</title>
+    <link rel="stylesheet" href="signinstyle.css" />
+</head>
+<body>
+    <nav>
+        <div class="nav-links">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="center">
+        <h1>Sign In</h1>
+        <form action="signinp.php" method="post">
+            <!--<div class="txt_field">
+        <input type="text" required name="eid" />
+        <span></span>
+        <label>EID</label>
+
+    </div>--->
+            <div class="txt_field">
+                <input type="text" required name="name" />
+                <span></span>
+                <label for="name">NAME</label>
+
+            </div>
+            <div class="txt_field">
+                <input type="number" required name="phone" />
+                <span></span>
+                <label for="phone">PHONE</label>
+
+            </div>
+            <!-- <div class="txt_field">
+        <input type="number" required name="salary" />
+        <span></span>
+        <label>SALARY</label>
+
+    </div>-->
+            <div class="txt_field">
+                <input type="text" required name="email" />
+                <span></span>
+                <label for="email">EMAIL</label>
+
+            </div>
+            <div class="txt_field">
+                <input type="date" required name="dob" />
+                <span></span>
+                <label for="dob">DOB</label>
+
+            </div>
+            <div class="txt_field">
+                <input type="text" required name="address" />
+                <span></span>
+                <label for="address">ADDRESS</label>
+
+            </div>
+            <!-- <div class="txt_field">
+        <input type="text" required name="job" />
+        <span></span>
+        <label>JOB</label>
+
+    </div> -->
+            <div class="txt_field">
+                <input type="password" required name="password" />
+                <span></span>
+                <label for="password">PASSWORD</label>
+            </div>
+            <input type="submit" value="Sign In" />
+        </form>
+
+    </div>
+
+</body>
+</html>

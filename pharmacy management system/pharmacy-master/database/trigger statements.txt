@@ -1,0 +1,15 @@
+Trigger statements
+
+Trigger(during insertion of a tuple on drugs table where the name of the drug will be converted into uppercase)
+
+CREATE TRIGGER TRI_DR1
+BEFORE INSERT
+ON DRUGS
+FOR EACH ROW
+BEGIN
+SET NEW.NAME=UPPER(NEW.NAME);
+
+Insert statement
+
+INSERT INTO DRUGS VALUES('1MT12','alpha','260MG',180,20,500,2022-07,2022-12,'BIOCON LTD,KARNATAKA, INDIA');
+

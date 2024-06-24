@@ -1,0 +1,181 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.header {
+	min-height: 15px;
+	width: 100%;
+	background: rgb(145, 34, 34);
+	/*background-image: url(pharmaimage/back10.jpg);*/
+	/*rgba(4,9,30,0.7)*/
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	
+}
+
+.banner-img{
+	min-height: 100vh;
+	width: 100%;
+	background-image: url(pharmaimage/back10.jpg);
+	/*rgba(4,9,30,0.7)*/
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	filter: blur(2.5px);
+}
+
+nav{
+	display: flex;
+	padding: 2% 6%;
+	justify-content:space-between;
+	align-items:center;
+}
+nav img{
+	width: 150px;
+}
+.nav-links{
+	flex: 1;
+	text-align: right;
+}
+.nav-links ul li{
+	list-style: none;
+	display: inline-block;
+	padding: 8px 12px;
+	position: relative; 
+}
+.nav-links ul li a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 15px;
+}
+.nav-links ul li::after{
+	content: '';
+	width: 0%;
+	height: 2px;
+	background: #fff;
+	display: block;
+	margin: auto;
+	transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+	width: 100%;
+}
+.text-box{
+	width: 90%;
+	color: rgb(145, 34, 34);
+	position: absolute;
+	top: 56%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+}
+.text-box h1{
+	font-family: 'Brush Script MT' ;
+	font-size: 100px;
+}
+.text-box p{
+	margin: 10px 0 40px;
+	font-family: 'Brush Script MT' ;
+	font-size: 30px;
+	color:rgb(145, 34, 34);
+}
+.moving-text{
+	font-size: 20px;
+	color:rgb(145, 34, 34);
+}
+
+
+.campus{
+	width: 100%;
+	margin: auto;
+	text-align: center;
+	padding-top: 50px;
+	box-sizing: border-box;
+	/*background-image: linear-gradient(rgba(240, 175, 226, 0.979),rgba(240, 175, 226, 0.979));*/
+	background-color: rgba(255, 228,181,0.7);
+	/*rgba(255,218,185,0.7);*/
+	/*#f5f5dc;*/
+	
+}
+.campus h1{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 30px;
+	color: rgb(145, 34, 34);
+	
+}
+.campus-col{
+	flex-basis: 32%;
+	border-radius: 10px;
+	margin-bottom: 30px;
+	position: relative;
+	overflow: hidden;
+	float: left;
+	width: 40%;
+	padding: 5%;
+}
+.row::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.campus-col img{
+	width: 100%;
+	display: block;
+	
+}
+.layer{
+	background: transparent;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: 0.5s;
+	
+}
+.layer:hover{
+	background: rgb(145, 34, 34,0.7);
+	/*rgba(220,0,0,0.7);*/
+}
+.layer a{
+	width: 100%;
+	font-weight: 500;
+	color: #fff;
+	font-size: 26px;
+	bottom: 0%;
+	left: 50%;
+	transform: translate(-50%);
+	position: absolute;
+	opacity: 0;
+	transition: 0.5s;
+}
+.layer:hover a{
+	bottom: 49%;
+	opacity: 1;
+}
+
+.footer {
+	background: rgb(145, 34, 34);
+	text-align: center;
+	width: 100%;
+	text-align: center;
+	padding: 30px 0;
+}
+
+.footer h4 {
+		margin-bottom: 25px;
+		margin-bottom: 20px;
+		font-weight: 600;
+		color: #f5f5dc;
+}
+.footer p {
+	color: #f5f5dc;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 22px;
+	padding: 10px;
+}
+
